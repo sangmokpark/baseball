@@ -16,7 +16,7 @@ line_fitter = LinearRegression()
 line_fitter.fit(X.values.reshape(-1,1), y)
 
 plt.plot(X, y, 'o')
-plt.plot(X,line_fitter.predict(X.values.reshape(-1,1)))
+
 b = input('원하는 ops를 입력하세요')
 a = line_fitter.predict([[b]])
 a = float(a)
