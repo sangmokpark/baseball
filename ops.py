@@ -19,7 +19,7 @@ X_train, X_test, y_train, y_test = train_test_split(X.values.reshape(-1,1), y, t
 line_fitter = LinearRegression().fit(X_train, y_train)
 
 plt.plot(X, y, 'o')
-plt.plot(X,line_fitter.predict(X.values.reshape(-1,1)))
+
 b = input('원하는 ops를 입력하세요')
 a = line_fitter.predict([[b]])
 a = float(a)
